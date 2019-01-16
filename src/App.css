@@ -20,7 +20,7 @@
 .nav-item:hover {
   color: #fff;
   text-decoration: none;
-  border-bottom: 3px solid #D16A47
+  border-bottom: 3px solid #D16A47;
 }
 
 .logo {
@@ -83,11 +83,11 @@ a.social-icons:hover {
 }
 
 .col-size-30 {
-  max-width: 30%;
+  max-width: 25%;
 }
 
 .col-size-70 {
-  width: 70%;
+  width: 60%;
 }
 
 .progress-box .progress {
@@ -99,4 +99,42 @@ a.social-icons:hover {
   transition-duration: 2000ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+/*EXPERIENCE*/
+.card-width {
+  width: 25vw;
+  height: 20vw;
+  margin-left: 0.5em;
+  border: 1px solid #007bff;
+  border-radius: 3%;
+}
+
+.row-size-100 {
+  width: 100vw;
+}
+
+.btn-info {
+  background-color: #025C91;
+}
+.btn-info:hover {
+  background-color: #024a75;
+}
+
+.download-txt {
+  text-decoration: none !important;
+}
+
+/*PROJECTS*/
+
+.box-projects {
+  height: 20vw;
+  background-color: blue;
+  border: 1px solid #fff;
+}
+
+/*FOOTER*/
+
+.bg-footer {
+  background: #ededed;
 }

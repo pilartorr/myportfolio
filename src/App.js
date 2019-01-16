@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn, faGithub, faGooglePlusG } from '@fortawesome/free-brands-svg-icons';
+import { faCloudDownloadAlt } from '@fortawesome/free-solid-svg-icons';
 import logo from './logo.jpg';
 import './App.css';
 
@@ -37,9 +38,9 @@ class App extends Component {
             </div>
           </div>
         </div>
-        <div className="row section-height d-flex align-items-center" id="about">
+        <div id="about" className="row section-height d-flex align-items-center">
          <div className="col col-size-30 m-5">
-          <h1 className="lead text-right ">Hi, It´s me!</h1>
+          <h1 className="lead text-right">Hi, It´s me!</h1>
           <p className="text-right">What I am all about.</p>
          </div>
          <div className="col col-size-70 m-5">
@@ -73,7 +74,7 @@ class App extends Component {
               </div>
             </div>
             <div className="progress-box">
-              <p className="mt-3">Photoshop, InDesign & Premiere<span className="color-heading pull-right">85%</span></p>
+              <p className="mt-3">Photoshop, InDesign & Premiere<span className="col color-heading pull-right">85%</span></p>
               <div className="progress">
                 <div className="progress-bar bg-color-base" role="progressbar" data-width="85"></div>
               </div>
@@ -81,6 +82,88 @@ class App extends Component {
           </div>
          </div>
         </div>
+        <div id="experience" className="row d-flex-items-center">
+          <div className="row m-5">
+            <div className="col col-size-30 mx-5">
+              <h1 className="lead text-right">What can I offer?</h1>
+              <p className="text-right">Batman would be jealous.</p>
+            </div>
+            <div className="col col-size-70 mx-5 d-flex-items-center">
+              <div className="row">
+                <div className="col card-width p-4">
+                  <p className="lead">Creativity </p>
+                  <p className="">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+                </div>
+                <div className="col card-width p-4">
+                  <p className="lead">Pixel-perfect</p>
+                  <p className="">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+                </div>
+                <div className="col card-width p-4">
+                  <p className="lead">Interactive Code</p>
+                  <p className="">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="row m-auto">
+            <button type="button" className="btn btn-info mb-5">
+             <a href="" download className="download-txt text-white"><FontAwesomeIcon icon={faCloudDownloadAlt} /> Resume PDF</a>
+            </button>
+          </div>
+        </div>
+        <div id="projects" className="row section-height d-flex align-items-center">
+         <div className="col col-size-30 m-5">
+          <h1 className="lead text-right">Projects</h1>
+          <p className="text-right">I build the real value.</p>
+         </div>
+         <div className="col col-size-70 m-5">
+          <div className="row">
+           <div className="box-projects col-8"></div>
+           <div className="box-projects col-4"></div>
+          </div>
+          <div className="row">
+           <div className="box-projects col-3"></div>
+           <div className="box-projects col-3"></div>
+           <div className="box-projects col-3"></div>
+           <div className="box-projects col-3"></div>
+          </div>
+         </div>
+        </div>
+        <div id="contact" className="row bg-footer">
+          <div className="col col-size-30 m-5">
+           <h1 className="lead text-right">Contacts</h1>
+           <p className="text-right">Hire me.</p>
+          </div>
+          <div className="col col-size-70 m-5">
+           <div className="row">
+             <div class="col-md-3 col-xs-6 md-margin-b-30">
+                 <p>Location</p>
+                 <a href="#">Berlin, Germany</a>
+             </div>
+             <div class="col-md-3 col-xs-6 md-margin-b-30">
+                 <p>Phone</p>
+                 <a href="#">+49 176 2001 8532</a>
+             </div>
+             <div class="col-md-3 col-xs-6">
+                 <p>Email</p>
+                 <a href="mailto:#">pilartorres.dev@gmail.com</a>
+             </div>
+             <div class="col-md-3 col-xs-6">
+                 <p>Web</p>
+                 <a href="#">www.pilartorres.com</a>
+             </div>
+            </div>
+          </div>
+        </div>
+        <footer className="footer">
+          <div className="content container">
+            <div className="row m-3">
+              <div className="col-xs m-auto">
+                <p className="text-center">&copy;pilartorres2019</p>
+              </div>
+            </div>
+          </div>
+        </footer>
       </Fragment>
     );
   }
