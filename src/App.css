@@ -75,3 +75,28 @@ a.social-icons:hover {
   background-color: #fff;
   color: #007bff;
 }
+
+/*ABOUT*/
+
+.section-height {
+  min-height: 100vh;
+}
+
+.col-size-30 {
+  max-width: 30%;
+}
+
+.col-size-70 {
+  width: 70%;
+}
+
+.progress-box .progress {
+  box-shadow: none;
+  height: 3px;
+}
+
+.progress-box .progress-bar {
+  transition-duration: 2000ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
