@@ -70,7 +70,7 @@ class App extends Component {
             <div className="progress-box">
               <p className="mt-3">React & Redux<span className="color-heading pull-right">75%</span></p>
               <div className="progress">
-                <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={"width: 75%"}></div>
+                <div className="progress-bar bg-color-base" role="progressbar" data-width="75"></div>
               </div>
             </div>
             <div className="progress-box">
