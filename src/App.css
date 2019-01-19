@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Hind');
 
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+    display: none;
+}
+
 /*HOME*/
 
 .App-header {
@@ -82,14 +86,6 @@ a.social-icons:hover {
   min-height: 100vh;
 }
 
-.col-size-30 {
-  max-width: 25%;
-}
-
-.col-size-70 {
-  width: 60%;
-}
-
 .progress-box .progress {
   box-shadow: none;
   height: 3px;
@@ -103,21 +99,17 @@ a.social-icons:hover {
 
 /*EXPERIENCE*/
 .card-width {
-  width: 25vw;
-  height: 20vw;
   margin-left: 0.5em;
-  border: 1px solid #007bff;
+  border: 1px solid #025C91;
   border-radius: 3%;
 }
 
-.row-size-100 {
-  width: 100vw;
-}
 
-.btn-info {
+.btn-info, .reverse-color {
   background-color: #025C91;
+  color: #fff;
 }
-.btn-info:hover {
+.btn-info:hover, {
   background-color: #024a75;
 }
 
@@ -125,16 +117,67 @@ a.social-icons:hover {
   text-decoration: none !important;
 }
 
+.blue-color {
+  color: #025C91;
+}
+
 /*PROJECTS*/
 
 .box-projects {
-  height: 20vw;
-  background-color: blue;
+  height: 15vw;
+  background-color: #fcfcfc;
   border: 1px solid #fff;
 }
 
+.bg-red {
+  background-color: #ff0029
+}
+
+.bg-darkBlue {
+  background-color: #00cfd0;
+}
+
+.bg-pale {
+  background-color: #DD969C;
+}
+
+.bg-sky {
+  background-color: #588eff;
+}
+
+.bg-herzBlue {
+  background-image: linear-gradient(#7067ff, #2dbeff);
+}
+
+.bg-purple {
+  background-color: #79009b;
+}
 /*FOOTER*/
 
 .bg-footer {
-  background: #ededed;
+  background: #f9f9f9;
+}
+
+.footer-font-size-subtitle {
+  font-size: 0.7rem;
+}
+/*ANIMATIONS*/
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }
